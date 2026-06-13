@@ -2,9 +2,9 @@
   "name": "goldenfleece",
   "version": "1.0.0",
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=4096 next dev",
+    "dev": "node api.js && cross-env NODE_OPTIONS=--max-old-space-size=4096 next dev",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=4096 next build",
-    "start": "next start",
+    "start": "node api.js && next start",
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watch",
